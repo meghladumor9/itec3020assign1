@@ -16,6 +16,7 @@
 	background-color: lightgray;
 }
 
+
 /*-----Main Page-----*/
 .container{
 	max-width: 1300px;
@@ -25,13 +26,28 @@
 }
 .navbar{
 	display: flex;
-	align-items: center;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
 	padding: 20px;
 }
-nav{
+nav {
 	flex: 1;
 	text-align: right;
 }
+.nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: right;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	min-height: 100px;
+}
+
 nav ul{
 	display: inline-block;
 	list-style-type: none;
@@ -51,15 +67,21 @@ ul li a{
 	border: 1px solid transparent;
 	transition: 0.6s ease;
 }
+.navLinks {
+	text-decoration: underline;
+	color: black;
+}
+.wishlist {
+	display: flex;
+	align-items: center;
+}
 p{
 	color: black;
 }
 .navbar input[type=text] {
-  float: right;
   padding: 6px;
   border: none;
   margin-top: 8px;
-  margin-right: 16px;
   font-size: 17px;
 }
 
@@ -124,7 +146,9 @@ p{
 .ybtn {
 	background-color: #00ccff;
 } 
-
+.url{
+	color:black;
+}
 
 /*---product info---*/
 .product-info{
@@ -202,6 +226,14 @@ p{
 }
 .coupon-col-3 .btn{
 	font-size: 15px;
+}
+.coupon input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
 }
 
 /*------footer-------*/
